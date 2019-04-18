@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Регистрация"> 
+    <title>ДЗ-№2, Регистрация</title>
+</head>
+<body>
+    <h3>Регистрация</h3>
+    <form action="#">
+        <fieldset>
+            <label>
+                Имя пользователя: 
+                <input type="text" minlength="3" required/>
+            </label>
+            <br/>
+            <br/>
+            <label>
+                Адрес email: 
+                <input type="email" required/>
+            </label>
+            <br/>
+            <br/>
+            <label>
+                Пароль: 
+                <input type="password" minlength="5" required/>
+            </label>
+            <br/>
+            <br/>
+            <label>
+                Подтверждение: 
+                <input type="password" minlength="5" required/>
+            </label>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <button type="submit">Продолжить</button>
+            <button type="submit" formaction="index.html" form="back">Назад</button>
+        </fieldset>
+    </form>
+    <form id="back"></form>
+</body>
+</html>
