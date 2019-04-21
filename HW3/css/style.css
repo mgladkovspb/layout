@@ -1,0 +1,51 @@
+body {
+    background: url(../../images/background-code.jpg) no-repeat center center fixed;
+    color: #ECF0F1;
+    font-size: 20px;
+}
+
+.block {
+    background-color: rgba(23, 32, 42, .4);
+}
+
+.space {
+    height: 20px;
+}
+
+.todo {
+    align-content: center;
+    padding: 5px;
+    list-style-type: decimal;
+}
+
+.todo > li {
+    float:left;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgba(23, 32, 42, .7);
+    width: 21%;
+    min-height: 300px;
+    vertical-align: top;
+}
+
+.todo ul > li {
+    color: #D35400;
+}
+
+/* меню */
+.menu {
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block; 
+    list-style-type: none;
+    padding: 15px;
+    background-color: rgba(44, 62, 80, .3);
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #ECF0F1;
+}
