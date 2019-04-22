@@ -20,6 +20,51 @@ body {
     height: 20px;
 }
 
+h3.art  {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a.art {
+    text-decoration: none;
+    color: #D35400;
+}
+
+p.art {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 49%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+div.art {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+a.btn {
+    font: bold 11px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+
+.pic {
+    float: left;
+    height: 150px;
+    width: 120px;
+    margin: 0px 10px 10px 0px;
+}
+
 .todo {
     align-content: center;
     list-style-type: none;
