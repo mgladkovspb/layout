@@ -46,6 +46,11 @@ div.art {
     margin-bottom: 15px;
 }
 
+div.art .cont {
+    margin-left: 150px; 
+    min-height: 170px;
+}
+
 a.btn {
     font: bold 11px Arial;
     text-decoration: none;
