@@ -1,11 +1,19 @@
 body {
-    background: url(../../images/background-code.jpg) no-repeat center center fixed;
+    background-image: url(../../images/background-code.jpg);
+    background-position: left, top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto; /* cover contain */
+    background-color: #464646;
     color: #ECF0F1;
     font-size: 20px;
+    margin: 0px;
 }
 
 .block {
     background-color: rgba(23, 32, 42, .4);
+    border: 0px;
+    margin: 0px;
 }
 
 .space {
@@ -14,8 +22,8 @@ body {
 
 .todo {
     align-content: center;
+    list-style-type: none;
     padding: 5px;
-    list-style-type: decimal;
 }
 
 .todo > li {
@@ -32,6 +40,13 @@ body {
     color: #D35400;
 }
 
+textarea
+{
+  width:100%;
+  margin:5px 0;
+  padding:3px;
+}
+
 /* меню */
 .menu {
     text-align: center;
@@ -42,6 +57,10 @@ body {
     list-style-type: none;
     padding: 15px;
     background-color: rgba(44, 62, 80, .3);
+}
+
+.menu li.active {
+    background-color: rgba(211, 84, 0, .3);
 }
 
 .menu a {

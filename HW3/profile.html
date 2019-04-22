@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Страница анкета, домашнего задания №3"> 
+    <title>ДЗ-№3, Анкета</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <nav class="menu block">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li class="active"><a href="profile.html">Анкета</a></li>
+            <li><a href="articles.html">Статьи</a></li>
+        </ul>
+    </nav>
+    <!-- 
+        При появлении скроллбара, страница дергается в лево.
+        Как этого можно избежать?
+    -->
+    <div class="space"></div>
+    <div>
+        <form action="#">
+            <fieldset class="block">
+                <p>
+                    <label>
+                        Имя пользователя: 
+                        <input type="text" minlength="3" required/>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Адрес email: 
+                        <input type="email" required/>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Пароль: 
+                        <input type="password" minlength="5" required/>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        Подтверждение: 
+                        <input type="password" minlength="5" required/>
+                    </label>
+                </p>
+                <p>
+                    <label>Сайт:
+                        <input type="url" value="http://www.yandex.ru">
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset class="block">
+                <p>
+                    <label>Дата рождения
+                        <input id="date" min="2012-12-12" type="date">
+                    </label>
+				</p>
+			</fieldset>
+            <fieldset class="block">
+                <legend>Пол</legend>
+                <p>
+                    <label><input name="answer" checked type="radio">М</label>
+                    <label><input name="answer" type="radio">Ж</label>
+                </p>
+            </fieldset>
+            <fieldset class="block">
+            <legend>Фото</legend>
+                <p>
+                    <input type="file" accept="image/*">
+                </p>
+            </fieldset>
+            <fieldset class="block">
+                <legend>Уведомления</legend>
+                <p>
+                    <label><input name="answer2[]" type="checkbox">Рекалама</label>
+                    <label><input name="answer2[]" type="checkbox">Уведомления</label>
+                    <label><input name="answer2[]" type="checkbox">Другое</label>
+                </p>
+                <p>
+                    <label for="number">Получать не более
+                        <input id="number" type="number" min="1"> уведомлений
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset class="block">
+            <legend>Мой любимый цвет</legend>
+                <p>
+                    <input type="color">
+                </p>
+            </fieldset>
+            <fieldset class="block">
+                <legend>Знак зодиака</legend>
+                <p>
+                    <select name="select" required>
+                        <option selected value="1">Овен</option>
+                        <option value="2">Телец</option>
+                        <option value="3">Близнецы</option>
+                        <option value="4">Рак</option>
+                        <option value="5">Лев</option>
+                        <option value="6">Дева</option>
+                        <option value="7">Весы</option>
+                        <option value="8">Скорпион</option>
+                        <option value="9">Стрелец</option>
+                        <option value="10">Козерог</option>
+                        <option value="11">Водолей</option>
+                        <option value="12">Рыбы</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset class="block">
+                <legend>Кратко о себе</legend>
+                <p>
+                    <textarea rows="10" placeholder="Я супер!!!"></textarea>
+                </p>
+            </fieldset>
+            <fieldset class="block">
+                <button type="submit">Записать</button>
+                <button type="submit" formaction="index.html" form="back">Назад</button>
+            </fieldset>
+        </form>
+        <form id="back"></form>
+    </div>
+</body>
