@@ -1,0 +1,42 @@
+@import url("grid.css");
+
+.content {
+    min-height: 200px;
+    margin: 5px;
+    background-color: burlywood;
+}
+
+.content.big {
+    height: 830px;
+}
+
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.slide {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .slide img {
+    width: 90%;
+    height: 500px;
+} */
+
+/* slider */
+.slider {
+    margin: 0;
+}
+
+.slider li {
+    display: none
+}
+
+.slider li.active {
+    display: block;
+}
