@@ -1,13 +1,25 @@
 @import url("grid.css");
 
+.container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.center {
+    margin: auto;
+    padding: 20px 10px 10px;
+}
+
 .content {
-    min-height: 200px;
+    min-height: 180px;
     margin: 5px;
-    background-color: burlywood;
+    background-color: #74b9ff;
 }
 
 .content.big {
-    height: 830px;
+    height: 560px;
 }
 
 .buttons {
@@ -16,25 +28,32 @@
     text-align: center;
 }
 
+/* slide */
 .slide {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
 }
 
-/* .slide img {
-    width: 90%;
-    height: 500px;
-} */
+.slide img {
+    display: block;
+}
+
+.image-description {
+    position: absolute;
+    font: bold;
+    color: whitesmoke;
+    left: 70px;
+    bottom: 30px;
+    font-size: 20px;
+}
 
 /* slider */
 .slider {
     margin: 0;
+    padding: 0;
 }
 
 .slider li {
-    display: none
+    display: none;
 }
 
 .slider li.active {

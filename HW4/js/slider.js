@@ -1,28 +1,22 @@
 'use strict';
 
 class Slider {
-    constructor(className) {
-        this._elements = document.querySelectorAll('.' + className + ' li');
+    constructor() {
+        this._elements = document.querySelectorAll('.slider li');
         this._min      = 0;
-        this._max      = this._elements.length - 1 || 0;
+        this._max      = this._elements.length - 1;
         this._current  = this._min;
     }
 
     forward() {
-        if(this._current == this._max) 
-            this._current = this._min;
-        else 
-            this._current++;
-
+        this._current = (this._current == this._max) ? 
+            this._min : this._current + 1;
         this._setVisible(this._current);
     }
 
     backward() {
-        if(this._min == this._current) 
-            this._current = this._max;
-        else 
-            this._current--;
-
+        this._current = (this._min == this._current) ? 
+            this._max : this._current - 1;
         this._setVisible(this._current);
     }
 
@@ -34,5 +28,5 @@ class Slider {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    window.mySlider = new Slider('slider');
+    window.mySlider = new Slider();
 }, false);

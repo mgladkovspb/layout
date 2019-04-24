@@ -3,7 +3,7 @@ body {
     background-position: left, top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: auto; /* cover contain */
+    background-size: cover; /* cover contain */
     background-color: #464646;
     color: #ECF0F1;
     font-size: 20px;
