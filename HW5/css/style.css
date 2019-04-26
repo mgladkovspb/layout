@@ -1,0 +1,62 @@
+@import url("grid.css");
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lato', 'Open Sans', Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.relative {
+    position: relative;
+}
+
+.modal-window {
+    /* position: static; */
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    /* top: 100px; */
+}
+
+.dg-default {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.btn {
+    background-color: #ecedee;
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 7px 24px 8px;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+.btn-default {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.modal-header h4 {
+    margin: 5px 0 5px;
+}
+
+.modal-header, .modal-content, .modal-footer {
+    padding: 10px 15px;
+}
+
+/* menu */
+
+.menu-container {}
