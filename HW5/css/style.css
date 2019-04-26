@@ -11,6 +11,11 @@ html, body {
     font-family: 'Lato', 'Open Sans', Helvetica, sans-serif;
 }
 
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
 .container {
     width: 100%;
     max-width: 1024px;
@@ -23,10 +28,14 @@ html, body {
 }
 
 .modal-window {
-    /* position: static; */
+    display: none;
     margin-top: 50px;
+    border-radius: 2px;
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-    /* top: 100px; */
+}
+
+.modal-window:target {
+    display: block;
 }
 
 .dg-default {
@@ -42,6 +51,7 @@ html, body {
     padding: 7px 24px 8px;
     vertical-align: middle;
     border-radius: 2px;
+    text-decoration: none;
 }
 
 .btn-default {
@@ -53,10 +63,52 @@ html, body {
     margin: 5px 0 5px;
 }
 
-.modal-header, .modal-content, .modal-footer {
+.modal-header, .modal-content {
     padding: 10px 15px;
 }
 
-/* menu */
+.modal-footer {
+    padding: 20px 15px;
+}
 
-.menu-container {}
+/* menu */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    background:#2980b9;
+    height: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    background:#2980b9;
+    color: #fff;
+    padding: 0px 15px;
+    line-height: 50px;
+    display: block; 
+    border-right: 1px solid #2980b9;
+}
+.menu a:hover {
+    background: #163e58;
+}
+
+.menu li {
+    float: left;
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    display: none;
+    margin: 0;
+}
+
+.menu li:hover > .sub-menu {
+    display: block; 
+    width: 250px;
+}
+
+.menu li:hover > .sub-menu > li {
+    float: none; 
+}
